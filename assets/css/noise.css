@@ -1,0 +1,100 @@
+#noise {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    padding: 50px;
+}
+
+.noise svg {
+
+    padding-top: 50px;
+
+}
+
+.noiseLine {
+    stroke: #88BF9B;
+    fill: none;
+    animation: noiseLine 60ms linear infinite;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+}
+
+.jumper {
+    stroke: none;
+    fill: #F2F1DF;
+    animation: jump 120ms alternate infinite;
+    offset-path: path("M50 60 V 10 20");
+    offset-distance: 0%;
+}
+
+.jumper:nth-of-type(1) {
+    fill: #F2F1DF;
+    animation: jump 120ms alternate infinite;
+    offset-path: path("M40 60 V 10 20");
+    offset-distance: 0%;
+}
+
+.jumper:nth-of-type(2) {
+    fill: #F2F1DF;
+    animation: jump 120ms alternate infinite;
+    offset-path: path("M30 60 V 10 20");
+    offset-distance: 0%;
+}
+
+.jumper:nth-of-type(3) {
+    fill: #F2F1DF;
+    animation: jump 120ms alternate-reverse infinite;
+    offset-path: path("M32 60 V 10 20");
+    offset-distance: 0%;
+}
+
+.jumper:nth-of-type(4) {
+    fill: #F2F1DF;
+    animation: jump 120ms alternate-reverse infinite;
+    offset-path: path("M42 60 V 10 20");
+    offset-distance: 0%;
+}
+
+.jumper:nth-of-type(4) {
+    fill: #F2F1DF;
+    animation: jump 120ms alternate-reverse infinite;
+    offset-path: path("M48 60 V 10 20");
+    offset-distance: 0%;
+}
+
+@keyframes jump {
+    25% {
+        offset-distance: 95%;
+        fill-opacity: 0;
+    }
+
+    50% {
+        offset-distance: 50%;
+        fill-opacity: 1;
+    }
+
+    75% {
+        offset-distance: 75%;
+        fill-opacity: 0.5;
+    }
+
+    100% {
+        offset-distance: 25%;
+        fill-opacity: 1;
+    }
+}
+
+@keyframes noiseLine {
+    50% {
+
+        stroke-dashoffset: 0;
+        stroke-opacity: 0.5;
+    }
+
+    100% {
+        stroke-dashoffset: -200;
+        stroke-opacity: 1;
+    }
+}

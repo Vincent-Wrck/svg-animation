@@ -1,0 +1,61 @@
+.speed {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.speedCircle {
+    stroke: #88BF9B;
+    fill: none;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 12;
+    animation: speedCircle 10s alternate infinite;
+}
+
+
+@keyframes speedCircle {
+    0% {
+        stroke-dasharray: 12;
+        stroke-dashoffset: 200;
+    }
+
+    10% {
+        stroke-dasharray: 32;
+        stroke-dashoffset: 250;
+    }
+
+    30% {
+        stroke-dasharray: 8;
+        stroke-dashoffset: 400;
+    }
+
+    40% {
+        stroke-dasharray: 4;
+        stroke-dashoffset: 150;
+    }
+
+    50% {
+        stroke-dasharray: 24;
+        stroke-dashoffset: 0;
+    }
+
+    60% {
+        stroke-dasharray: 4;
+        stroke-dashoffset: 250;
+    }
+
+    80% {
+        stroke-dasharray: 16;
+        stroke-dashoffset: -300;
+    }
+
+    90% {
+        stroke-dasharray: 4;
+        stroke-dashoffset: -150;
+    }
+
+    100% {
+        stroke-dasharray: 32;
+        stroke-dashoffset: -200;
+    }
+}

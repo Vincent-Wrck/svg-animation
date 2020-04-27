@@ -1,0 +1,63 @@
+header {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+    position: sticky;
+    top: 60vh;
+    text-align: center;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.current {
+    color: #8BD9AD
+}
+
+a {
+    text-decoration: none;
+    color: #F2F1DF;
+    letter-spacing: 10px;
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 15px;
+}
+
+a:hover {
+    text-decoration: line-through;
+    font-weight: 700;
+}
+
+.triangle {
+    fill: none;
+    stroke: #88BF9B;
+    animation: triangle 4s forwards infinite;
+    stroke-dasharray: 500;
+}
+
+@keyframes triangle {
+    from {
+        stroke-dashoffset: 500;
+    }
+
+    40% {
+        stroke-dashoffset: 0;
+    }
+
+    60% {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: -500;
+    }
+}

@@ -1,0 +1,51 @@
+/* Color Theme Swatches in Hex */
+/*
+.La-Vaca-Verde-1-hex { color: #8BD9AD; }
+.La-Vaca-Verde-2-hex { color: #252625; }
+.La-Vaca-Verde-3-hex { color: #6FA682; }
+.La-Vaca-Verde-4-hex { color: #88BF9B; }
+.La-Vaca-Verde-5-hex { color: #F2F1DF; }
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    background: #252625;
+    padding: 50px;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+h1 {
+
+    letter-spacing: 20px;
+    color: #F2F1DF;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h2 {
+
+    letter-spacing: 15px;
+    color: #F2F1DF;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-weight: 400;
+
+}
+
+p {
+
+    letter-spacing: 8px;
+    color: #F2F1DF;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 10px 0 10px 0;
+}

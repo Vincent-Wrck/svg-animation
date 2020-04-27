@@ -1,0 +1,98 @@
+#spin {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    padding: 50px;
+}
+
+.spinCircle {
+    stroke: #88BF9B;
+    fill: none;
+    stroke-dasharray: 24;
+    stroke-dashoffset: 12;
+    animation: spinCircle 8s alternate infinite;
+}
+
+.spinCircle:nth-of-type(1) {
+    animation: spinCircle 10s alternate infinite;
+}
+
+@keyframes spinCircle {
+    0% {
+        stroke-dasharray: 12;
+        stroke-dashoffset: -75;
+    }
+
+    5% {
+        stroke-dasharray: 16;
+        stroke-dashoffset: -58;
+    }
+
+    8% {
+        stroke-dasharray: 12;
+        stroke-dashoffset: -35;
+    }
+
+    18% {
+        stroke-dasharray: 6;
+        stroke-dashoffset: 48;
+    }
+
+    20% {
+        stroke-dasharray: 10;
+        stroke-dashoffset: -50;
+    }
+
+    24% {
+        stroke-dasharray: 12;
+        stroke-dashoffset: 36;
+    }
+
+    45% {
+        stroke-dasharray: 2;
+        stroke-dashoffset: -25;
+    }
+
+    48% {
+        stroke-dasharray: 1;
+        stroke-dashoffset: -32;
+    }
+
+    60% {
+        stroke-dasharray: 6;
+        stroke-dashoffset: -50;
+    }
+
+    63% {
+        stroke-dasharray: 8;
+        stroke-dashoffset: 48;
+    }
+
+    76% {
+        stroke-dasharray: 12;
+        stroke-dashoffset: -60;
+    }
+
+    85% {
+        stroke-dasharray: 16;
+        stroke-dashoffset: 68;
+    }
+
+    88% {
+        stroke-dasharray: 14;
+        stroke-dashoffset: 75;
+    }
+
+    98% {
+        stroke-dasharray: 4;
+        stroke-dashoffset: 60;
+    }
+
+    100% {
+        stroke-dasharray: 6;
+        stroke-dashoffset: 55;
+    }
+
+
+}
